@@ -2,12 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
   >
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/cakeimage"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -26,8 +27,8 @@
         android:text="Large Text"
         android:id="@+id/price"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/cakeimage"
+        android:layout_toEndOf="@+id/cakeimage"
 
         />
 
@@ -36,13 +37,13 @@
         android:layout_height="wrap_content"
         android:text="Large Text"
         android:id="@+id/desc"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@+id/cakeimage"
         android:layout_below="@id/price"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toRightOf="@+id/cakeimage"
 
         />
     <Button
-        android:id="@+id/but1"
+        android:id="@+id/buy_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

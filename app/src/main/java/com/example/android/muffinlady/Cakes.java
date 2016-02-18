@@ -1,6 +1,6 @@
 package com.example.android.muffinlady;
 
-
+            //class for cakes including the attributes of the cake
     public class Cakes {
 
         private int icon;

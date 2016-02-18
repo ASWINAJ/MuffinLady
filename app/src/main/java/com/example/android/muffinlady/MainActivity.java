@@ -29,25 +29,25 @@ public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-       // Intent i = new Intent(MainActivity.this,begin.class);
-       // startActivity(i);
+        setContentView(R.layout.activity_main); //Setting the layout to be activity_main xml file
+
 
     }
 
-  public void onclicked(View view)
+  public void onclicked(View view)      //function invoked on pressing the login button
   {
-      EditText uname = (EditText) findViewById(R.id.uname_text_view);
-      EditText pass = (EditText) findViewById(R.id.passw_text_view);
 
-      if((pass.getText().toString().equals("root")) && (uname.getText().toString().equals("root")))
+      EditText uname = (EditText) findViewById(R.id.uname_text_view);   //editview corresponding to the username
+      EditText pass = (EditText) findViewById(R.id.passw_text_view);    //editview corresponding to the password
+
+      if((pass.getText().toString().equals("root")) && (uname.getText().toString().equals("root"))) //checking for authentication
       {
-          Intent i = new Intent(MainActivity.this,begin1.class);
+          Intent i = new Intent(MainActivity.this,Products.class);   //starting the new activity Products
           startActivity(i);
       }
       else
       {
-          uname.setError("Wrong username");
+          uname.setError("Wrong username");         //if not root autherization it will pop up an error
           pass.setError("Wrong password");
       }
   }

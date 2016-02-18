@@ -10,7 +10,7 @@
     >
 
     <TextView
-        android:id="@+id/hello_text_view"
+        android:id="@+id/heading_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40sp"
@@ -21,6 +21,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hello_text_view"
-        android:id="@+id/listView" />
+        android:layout_below="@id/heading_text_view"
+        android:id="@+id/list_cakes"
+        android:clickable="true"/>
 </RelativeLayout>
